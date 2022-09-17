@@ -85,15 +85,12 @@ form.addEventListener("submit", function (event) {
 		alert("Sent! Expect to hear from us soon.");
 
         // clearing the form to enter new content
-        form.elements["myName"].value = null;
-        form.elements["myEmail"].value = null;
-        form.elements["myNumber"].value = null;
-        form.elements["myEnquiry"].value = null;
+        form.reset();
 
-		form.elements["myName"].value.focus();
-        form.elements["myEmail"].value.focus();
-        form.elements["myNumber"].value.focus();
-        form.elements["myEnquiry"].value.focus();
+		form.elements["myName"].style.backgroundColor = '#f1f1f1';
+        form.elements["myEmail"].style.backgroundColor = '#f1f1f1';
+        form.elements["myNumber"].style.backgroundColor = '#f1f1f1';
+        form.elements["myEnquiry"].style.backgroundColor = '#f1f1f1';
 	}
 
 });
